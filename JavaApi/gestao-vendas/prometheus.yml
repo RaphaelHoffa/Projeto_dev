@@ -1,0 +1,24 @@
+global:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'gestao-vendas'
+    scrape_interval: 5s
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['192.168.86.22:8080']
+
+  - job_name: 'docker'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['docker.for.mac.host.internal:9323']
+
+  - job_name: mysqlexplorer
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.86.22:9104']

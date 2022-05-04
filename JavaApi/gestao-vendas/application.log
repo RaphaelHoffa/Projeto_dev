@@ -1,0 +1,527 @@
+2021-12-22 13:57:40.262  INFO 8646 --- [restartedMain] c.g.g.GestaoVendasApplication            : Starting GestaoVendasApplication using Java 11.0.12 on raphaeleirasmbp.lan with PID 8646 (/Users/raphael.ferreira/Documents/Projeto_dev/JavaApi/gestao-vendas/target/classes started by raphael.ferreira in /Users/raphael.ferreira/Documents/Projeto_dev/JavaApi/gestao-vendas)
+2021-12-22 13:57:40.269  INFO 8646 --- [restartedMain] c.g.g.GestaoVendasApplication            : No active profile set, falling back to default profiles: default
+2021-12-22 13:57:40.344  INFO 8646 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-22 13:57:40.344  INFO 8646 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-22 13:57:41.073  INFO 8646 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-22 13:57:41.117  INFO 8646 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2021-12-22 13:57:41.981  INFO 8646 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 13:57:41.991  INFO 8646 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 13:57:41.991  INFO 8646 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 13:57:42.069  INFO 8646 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 13:57:42.069  INFO 8646 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1724 ms
+2021-12-22 13:57:42.377  INFO 8646 --- [restartedMain] o.c.s.w.s.ServerTracingAutoConfiguration : Creating FilterRegistrationBean bean with TracingFilter mapped to [], skip pattern is "/api-docs.*|/swagger.*|.*\.png|.*\.css|.*\.js|.*\.html|/favicon.ico|/hystrix.stream|/actuator/(health|health/.*|info|info/.*|prometheus|prometheus/.*|metrics|metrics/.*)"
+2021-12-22 13:57:42.485  INFO 8646 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.7.3 by Redgate
+2021-12-22 13:57:42.491  INFO 8646 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-22 13:57:42.897  INFO 8646 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-22 13:57:42.979  INFO 8646 --- [restartedMain] o.f.c.i.database.base.DatabaseType       : Database: jdbc:mysql://localhost/gvendas_db (MySQL 8.0)
+2021-12-22 13:57:43.075  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.030s)
+2021-12-22 13:57:43.110  INFO 8646 --- [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `gvendas_db`.`flyway_schema_history` ...
+2021-12-22 13:57:43.160  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2021-12-22 13:57:43.191  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2021-12-22 13:57:43.212  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `gvendas_db`: << Empty Schema >>
+2021-12-22 13:57:43.221  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `gvendas_db` to version "01 - criar e registrar categorias"
+2021-12-22 13:57:43.248  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2021-12-22 13:57:43.252  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.256  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.260  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.264  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.268  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.318  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `gvendas_db` to version "02 - criar e registrar produtos"
+2021-12-22 13:57:43.345  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2021-12-22 13:57:43.351  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.355  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.359  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.362  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.366  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.371  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.376  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.379  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.383  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.388  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.392  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.396  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.400  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.403  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.407  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.410  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.414  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.449  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Migrating schema `gvendas_db` to version "03 - criar e registrar clientes"
+2021-12-22 13:57:43.470  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2021-12-22 13:57:43.475  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.478  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.482  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.485  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.488  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.491  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.494  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.497  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.501  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.504  INFO 8646 --- [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor       : 1 rows affected
+2021-12-22 13:57:43.531  INFO 8646 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema `gvendas_db`, now at version v03 (execution time 00:00.328s)
+2021-12-22 13:57:44.585  INFO 8646 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-22 13:57:45.240  INFO 8646 --- [restartedMain] o.c.s.w.s.ServerTracingAutoConfiguration : Creating WebMvcConfigurer bean with class io.opentracing.contrib.spring.web.interceptor.TracingHandlerInterceptor
+2021-12-22 13:57:45.241  WARN 8646 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-22 13:57:45.321  INFO 8646 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-12-22 13:57:45.384  INFO 8646 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-22 13:57:45.493  INFO 8646 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 13:57:45.726  INFO 8646 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 13:57:45.726  INFO 8646 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-22 13:57:45.748  INFO 8646 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-22 13:57:45.773  INFO 8646 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-22 13:57:45.885  INFO 8646 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listarTodas_1
+2021-12-22 13:57:45.909  INFO 8646 --- [restartedMain] c.g.g.GestaoVendasApplication            : Started GestaoVendasApplication in 6.079 seconds (JVM running for 6.757)
+2021-12-22 13:57:49.046  INFO 8646 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-22 13:57:49.047  INFO 8646 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-22 13:57:49.048  INFO 8646 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-22 13:57:59.487  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 3f56631435486cc2:3f56631435486cc2:0:1 - GET
+2021-12-22 13:57:59.489  INFO 8646 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 689ba87f89524029:689ba87f89524029:0:1 - GET
+2021-12-22 13:57:59.504  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 3f56631435486cc2:95e5404131bd28e1:3f56631435486cc2:1 - error
+2021-12-22 13:57:59.510  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: b16401c068e12dd4:b16401c068e12dd4:0:1 - GET
+2021-12-22 13:57:59.512  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: b16401c068e12dd4:54a235a6127f3269:b16401c068e12dd4:1 - error
+2021-12-22 13:57:59.577  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 20927a74eca133a1:20927a74eca133a1:0:1 - GET
+2021-12-22 13:57:59.620  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: 85e5d4824c2adb7c:85e5d4824c2adb7c:0:1 - GET
+2021-12-22 13:57:59.621  INFO 8646 --- [http-nio-8080-exec-1] i.j.internal.reporters.LoggingReporter   : Span reported: 95ddea115869455e:95ddea115869455e:0:1 - GET
+2021-12-22 13:57:59.621  INFO 8646 --- [http-nio-8080-exec-9] i.j.internal.reporters.LoggingReporter   : Span reported: a8b97ad517550304:a8b97ad517550304:0:1 - GET
+2021-12-22 13:58:00.964  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: be39a8745de69679:be39a8745de69679:0:1 - GET
+2021-12-22 13:58:01.703  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 677bc2c18802b133:677bc2c18802b133:0:1 - GET
+2021-12-22 13:58:03.911  INFO 8646 --- [http-nio-8080-exec-3] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 13:58:03.953  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 74f27f48e95d2507:6930749138d6852e:74f27f48e95d2507:1 - Query
+2021-12-22 13:58:03.973  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 74f27f48e95d2507:11ef640d2bf65fde:74f27f48e95d2507:1 - Commit
+2021-12-22 13:58:03.979  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 74f27f48e95d2507:74f27f48e95d2507:0:1 - listarTodas
+2021-12-22 13:58:04.010  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 60fcd373cb400383:60fcd373cb400383:0:1 - GET
+2021-12-22 13:58:05.900  INFO 8646 --- [http-nio-8080-exec-7] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 13:58:05.908  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 2102c47caee8386c:f6e340edf5b6883d:2102c47caee8386c:1 - Query
+2021-12-22 13:58:05.910  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 2102c47caee8386c:179ac2b00ff2704b:2102c47caee8386c:1 - Commit
+2021-12-22 13:58:05.914  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 2102c47caee8386c:2102c47caee8386c:0:1 - listarTodas
+2021-12-22 13:58:06.515  INFO 8646 --- [http-nio-8080-exec-4] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 13:58:06.528  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: e607aae84eeaf229:f4f0d0f6ccbbc031:e607aae84eeaf229:1 - Query
+2021-12-22 13:58:06.531  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: e607aae84eeaf229:d3fe0976c8509c3c:e607aae84eeaf229:1 - Commit
+2021-12-22 13:58:06.535  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: e607aae84eeaf229:e607aae84eeaf229:0:1 - listarTodas
+2021-12-22 13:58:19.417  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: f85f0f20503d7df7:18c6429fc0847ae:f85f0f20503d7df7:1 - Query
+2021-12-22 13:58:19.419  INFO 8646 --- [http-nio-8080-exec-10] c.g.g.servico.CategoriaServico           : Transacao=salvar
+2021-12-22 13:58:19.444  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: f85f0f20503d7df7:c413401e91c3be91:f85f0f20503d7df7:1 - Update
+2021-12-22 13:58:19.458  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: f85f0f20503d7df7:f1829b9849edb46e:f85f0f20503d7df7:1 - Commit
+2021-12-22 13:58:19.462  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: f85f0f20503d7df7:f85f0f20503d7df7:0:1 - salvar
+2021-12-22 13:58:30.985  WARN 8646 --- [http-nio-8080-exec-3] c.g.g.e.GestaoVendasTratamentoExcecao    : Erro foi=BAD_REQUEST
+2021-12-22 13:58:30.986  WARN 8646 --- [http-nio-8080-exec-3] c.g.g.e.GestaoVendasTratamentoExcecao    : Erro foi=VALIDATION_LENGTH
+2021-12-22 13:58:30.989  WARN 8646 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gvendas.gestaovendas.entidades.Categoria> com.gvendas.gestaovendas.controlador.CategoriaControlador.salvar(com.gvendas.gestaovendas.entidades.Categoria): [Field error in object 'categoria' on field 'nome': rejected value [oi]; codes [Length.categoria.nome,Length.nome,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [categoria.nome,nome]; arguments []; default message [nome],50,3]; default message [Nome]] ]
+2021-12-22 13:58:30.990  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 432e069d0316b0e7:432e069d0316b0e7:0:1 - salvar
+2021-12-22 13:58:36.853  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 2b8fd6a3220065f0:2b8fd6a3220065f0:0:1 - GET
+2021-12-22 13:58:36.859  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 2b8fd6a3220065f0:d60e095110dac85b:2b8fd6a3220065f0:1 - error
+2021-12-22 13:58:36.866  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 77e40520fcbbf3e1:77e40520fcbbf3e1:0:1 - GET
+2021-12-22 13:58:36.896  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: e10988f741420b94:e10988f741420b94:0:1 - GET
+2021-12-22 13:58:36.896  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: 89e891644bf590d:89e891644bf590d:0:1 - GET
+2021-12-22 13:58:36.899  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: e10988f741420b94:a25e273339d5ec26:e10988f741420b94:1 - error
+2021-12-22 13:58:36.957  INFO 8646 --- [http-nio-8080-exec-9] i.j.internal.reporters.LoggingReporter   : Span reported: c0a5f3bbe3f6860c:c0a5f3bbe3f6860c:0:1 - GET
+2021-12-22 13:58:36.957  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 722197424465ec18:722197424465ec18:0:1 - GET
+2021-12-22 13:58:36.958  INFO 8646 --- [http-nio-8080-exec-1] i.j.internal.reporters.LoggingReporter   : Span reported: 2fdf2873c606013:2fdf2873c606013:0:1 - GET
+2021-12-22 14:00:11.712  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: d419264b4a8b55a6:d419264b4a8b55a6:0:1 - GET
+2021-12-22 14:00:11.766  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 7fe9aca4c4ebedd1:7fe9aca4c4ebedd1:0:1 - GET
+2021-12-22 14:00:21.904  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: cfc54d6214070e0e:dc9c98b40d7ed8f9:cfc54d6214070e0e:1 - Query
+2021-12-22 14:00:21.905  INFO 8646 --- [http-nio-8080-exec-2] c.g.g.servico.CategoriaServico           : Transacao=salvar
+2021-12-22 14:00:21.909  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: cfc54d6214070e0e:e1385a97c7f7dc1c:cfc54d6214070e0e:1 - Update
+2021-12-22 14:00:21.914  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: cfc54d6214070e0e:ec45932dac1fcd64:cfc54d6214070e0e:1 - Commit
+2021-12-22 14:00:21.917  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: cfc54d6214070e0e:cfc54d6214070e0e:0:1 - salvar
+2021-12-22 14:00:21.941  INFO 8646 --- [http-nio-8080-exec-1] i.j.internal.reporters.LoggingReporter   : Span reported: f804db8a1e251c6d:f804db8a1e251c6d:0:1 - GET
+2021-12-22 14:00:24.705  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: a09e9df28e3dcd67:e710078710945f38:a09e9df28e3dcd67:1 - Query
+2021-12-22 14:00:24.706  WARN 8646 --- [http-nio-8080-exec-3] c.g.g.servico.CategoriaServico           : Erro foi=Duplicate
+2021-12-22 14:00:24.706  WARN 8646 --- [http-nio-8080-exec-3] c.g.g.e.GestaoVendasTratamentoExcecao    : Erro foi=BAD_REQUEST
+2021-12-22 14:00:24.707  WARN 8646 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.gvendas.gestaovendas.excecao.RegraNegocioException: A categoria CARROS já está cadastrada]
+2021-12-22 14:00:24.708  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: a09e9df28e3dcd67:a09e9df28e3dcd67:0:1 - salvar
+2021-12-22 14:00:30.864  INFO 8646 --- [http-nio-8080-exec-5] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 14:00:30.870  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 130c19a22e9a6ca8:3f42ebca8216c7fa:130c19a22e9a6ca8:1 - Query
+2021-12-22 14:00:30.872  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 130c19a22e9a6ca8:3777eac69beadb2b:130c19a22e9a6ca8:1 - Commit
+2021-12-22 14:00:30.876  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 130c19a22e9a6ca8:130c19a22e9a6ca8:0:1 - listarTodas
+2021-12-22 14:00:31.504  INFO 8646 --- [http-nio-8080-exec-6] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 14:00:31.510  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f3978978c7ec17ba:8db5c659d33fb66f:f3978978c7ec17ba:1 - Query
+2021-12-22 14:00:31.513  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f3978978c7ec17ba:fb9487e8bc3e5a31:f3978978c7ec17ba:1 - Commit
+2021-12-22 14:00:31.518  INFO 8646 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f3978978c7ec17ba:f3978978c7ec17ba:0:1 - listarTodas
+2021-12-22 14:00:34.988  INFO 8646 --- [http-nio-8080-exec-9] i.j.internal.reporters.LoggingReporter   : Span reported: 67212fcd35d537ec:67212fcd35d537ec:0:1 - GET
+2021-12-22 14:00:34.990  INFO 8646 --- [http-nio-8080-exec-9] i.j.internal.reporters.LoggingReporter   : Span reported: 67212fcd35d537ec:847dfbe26a7fe649:67212fcd35d537ec:1 - error
+2021-12-22 14:00:34.990  INFO 8646 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: 14ee37f9df015202:14ee37f9df015202:0:1 - GET
+2021-12-22 14:00:35.020  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 539a4e702e80cd04:539a4e702e80cd04:0:1 - GET
+2021-12-22 14:00:35.021  INFO 8646 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 303c37fceec9a665:303c37fceec9a665:0:1 - GET
+2021-12-22 14:00:35.022  INFO 8646 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 539a4e702e80cd04:72ddc7b2b7403584:539a4e702e80cd04:1 - error
+2021-12-22 14:00:35.075  INFO 8646 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: e8dd5ecfe35fe79f:e8dd5ecfe35fe79f:0:1 - GET
+2021-12-22 14:00:35.077  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: c608ec183a612449:c608ec183a612449:0:1 - GET
+2021-12-22 14:00:35.077  INFO 8646 --- [http-nio-8080-exec-1] i.j.internal.reporters.LoggingReporter   : Span reported: fc90a36493cf4d84:fc90a36493cf4d84:0:1 - GET
+2021-12-22 14:27:00.701  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: b58a5bda30a53770:b58a5bda30a53770:0:1 - Close
+2021-12-22 14:27:00.741  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 5181d22eefd5c42e:5181d22eefd5c42e:0:1 - AcquireConnection
+2021-12-22 14:27:13.031  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 21694cc994cd68fc:21694cc994cd68fc:0:1 - Close
+2021-12-22 14:27:13.055  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: c3c59166ed2a474e:c3c59166ed2a474e:0:1 - AcquireConnection
+2021-12-22 14:27:13.252  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 2f54f87f6cdf88f8:2f54f87f6cdf88f8:0:1 - Close
+2021-12-22 14:27:13.272  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f57f79b918c85273:f57f79b918c85273:0:1 - AcquireConnection
+2021-12-22 14:27:23.387  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: efde8a2264bfdd6a:efde8a2264bfdd6a:0:1 - Close
+2021-12-22 14:27:23.407  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9f564541d45c4f4:9f564541d45c4f4:0:1 - AcquireConnection
+2021-12-22 14:27:27.964  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: ae5dd6f73dcc2d1f:ae5dd6f73dcc2d1f:0:1 - Close
+2021-12-22 14:27:27.982  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 6341c5e35bbbcb9b:6341c5e35bbbcb9b:0:1 - AcquireConnection
+2021-12-22 14:27:28.147  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 490cd1261824cde8:490cd1261824cde8:0:1 - Close
+2021-12-22 14:27:28.168  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: b11e55de9f494f3b:b11e55de9f494f3b:0:1 - AcquireConnection
+2021-12-22 14:27:31.026  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: e0be814f4a971dea:e0be814f4a971dea:0:1 - Close
+2021-12-22 14:27:31.050  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: c1b86d67ec16a13a:c1b86d67ec16a13a:0:1 - AcquireConnection
+2021-12-22 14:27:31.713  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: ad8bce7a0db67f40:ad8bce7a0db67f40:0:1 - Close
+2021-12-22 14:27:31.731  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: bac71742f659f9a:bac71742f659f9a:0:1 - AcquireConnection
+2021-12-22 14:27:33.301  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 4711d287e6a4ed72:4711d287e6a4ed72:0:1 - Close
+2021-12-22 14:27:33.320  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 7b6200020b8961ca:7b6200020b8961ca:0:1 - AcquireConnection
+2021-12-22 14:27:34.514  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 319f2e1fcccbb015:319f2e1fcccbb015:0:1 - Close
+2021-12-22 14:27:34.533  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 2012765cf038e2d9:2012765cf038e2d9:0:1 - AcquireConnection
+2021-12-22 14:32:34.767  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 47c0b69865c93e92:47c0b69865c93e92:0:1 - GET
+2021-12-22 14:32:34.793  INFO 8646 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 42dbcb0b72418e54:42dbcb0b72418e54:0:1 - GET
+2021-12-22 14:32:37.951  INFO 8646 --- [http-nio-8080-exec-7] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 14:32:37.955  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@38d602fd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.956  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: a6172b4644cb59d2:a6172b4644cb59d2:0:1 - Close
+2021-12-22 14:32:37.957  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@646bc779 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.957  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 7129e839f19d653:7129e839f19d653:0:1 - Close
+2021-12-22 14:32:37.958  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@28812d6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.959  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 2dce05e086c315cd:2dce05e086c315cd:0:1 - Close
+2021-12-22 14:32:37.960  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@ac13990 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.960  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 72e9ce8a8038cc61:72e9ce8a8038cc61:0:1 - Close
+2021-12-22 14:32:37.961  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 8837791964b4cea5:8837791964b4cea5:0:1 - AcquireConnection
+2021-12-22 14:32:37.962  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@518d1787 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.962  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 71c6c035fa193a26:71c6c035fa193a26:0:1 - Close
+2021-12-22 14:32:37.963  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@6b6742c0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.964  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: fcd83eebac67eac4:fcd83eebac67eac4:0:1 - Close
+2021-12-22 14:32:37.965  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@13bd5928 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.965  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: bbfe1558cfa0f489:bbfe1558cfa0f489:0:1 - Close
+2021-12-22 14:32:37.966  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@421d68dd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.967  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: ecda2557ab6ebe13:ecda2557ab6ebe13:0:1 - Close
+2021-12-22 14:32:37.967  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@344e7665 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.968  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: c52b63502af5891:c52b63502af5891:0:1 - Close
+2021-12-22 14:32:37.970  WARN 8646 --- [http-nio-8080-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@346d31c8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:32:37.970  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 6f641cab5bf1c461:6f641cab5bf1c461:0:1 - Close
+2021-12-22 14:32:38.218  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 7685d4a39b9aa2e5:7685d4a39b9aa2e5:0:1 - AcquireConnection
+2021-12-22 14:32:38.599  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9a5a5e1cd8d23620:9a5a5e1cd8d23620:0:1 - AcquireConnection
+2021-12-22 14:32:39.165  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 587414680af30230:587414680af30230:0:1 - AcquireConnection
+2021-12-22 14:32:40.015  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 6b3fa08d43030ce4:6b3fa08d43030ce4:0:1 - AcquireConnection
+2021-12-22 14:32:41.284  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 81c5908ef8fac14:81c5908ef8fac14:0:1 - AcquireConnection
+2021-12-22 14:32:43.185  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 51901b84492096f5:51901b84492096f5:0:1 - AcquireConnection
+2021-12-22 14:32:46.035  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 77ce9ba8b76a5759:77ce9ba8b76a5759:0:1 - AcquireConnection
+2021-12-22 14:32:50.305  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: b23c1f168c15bf3b:b23c1f168c15bf3b:0:1 - AcquireConnection
+2021-12-22 14:32:56.708  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 5c0dbec5fbccca38:5c0dbec5fbccca38:0:1 - AcquireConnection
+2021-12-22 14:33:06.309  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 30da3faebb3ba4b2:30da3faebb3ba4b2:0:1 - AcquireConnection
+2021-12-22 14:33:07.960 ERROR 8646 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30007ms.
+2021-12-22 14:33:07.961 ERROR 8646 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-12-22 14:33:07.969  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 90f4c55f65cd1a2c:90f4c55f65cd1a2c:0:1 - listarTodas
+2021-12-22 14:33:07.975 ERROR 8646 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at io.opentracing.contrib.jdbc.TracingDriver.lambda$connect$0(TracingDriver.java:172) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.JdbcTracingUtils.call(JdbcTracingUtils.java:108) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.TracingDriver.connect(TracingDriver.java:171) ~[opentracing-jdbc-0.2.12.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-12-22 14:33:07.978  INFO 8646 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 90f4c55f65cd1a2c:8b41fab9ab19807:90f4c55f65cd1a2c:1 - error
+2021-12-22 14:33:08.388  INFO 8646 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: c91d50d888e8efb7:c91d50d888e8efb7:0:1 - GET
+2021-12-22 14:33:16.317  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9512700276442d0b:9512700276442d0b:0:1 - AcquireConnection
+2021-12-22 14:33:26.347  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f2496843fe70924a:f2496843fe70924a:0:1 - AcquireConnection
+2021-12-22 14:33:26.369  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: d76882697f6d8715:d76882697f6d8715:0:1 - AcquireConnection
+2021-12-22 14:33:26.389  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: e86c24befafd150a:e86c24befafd150a:0:1 - AcquireConnection
+2021-12-22 14:33:26.411  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9f931e33c739d43b:9f931e33c739d43b:0:1 - AcquireConnection
+2021-12-22 14:33:26.432  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: d53383300938ce07:d53383300938ce07:0:1 - AcquireConnection
+2021-12-22 14:33:26.451  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: a0915145e0dd33c1:a0915145e0dd33c1:0:1 - AcquireConnection
+2021-12-22 14:33:26.469  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 8e33022d561d7ca9:8e33022d561d7ca9:0:1 - AcquireConnection
+2021-12-22 14:33:26.488  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 90e8278fbfc5d73c:90e8278fbfc5d73c:0:1 - AcquireConnection
+2021-12-22 14:33:26.506  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 2ac354089de2bdad:2ac354089de2bdad:0:1 - AcquireConnection
+2021-12-22 14:33:26.523  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 1663d896f8264df3:1663d896f8264df3:0:1 - AcquireConnection
+2021-12-22 14:38:31.507  INFO 8646 --- [http-nio-8080-exec-8] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 14:38:31.510  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@5661c648 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.511  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: a1b55ea47d92fe37:a1b55ea47d92fe37:0:1 - Close
+2021-12-22 14:38:31.512  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@6910ae6d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.513  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 22562b60d87a8b30:22562b60d87a8b30:0:1 - Close
+2021-12-22 14:38:31.515  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: af87bc34c9dcf037:af87bc34c9dcf037:0:1 - AcquireConnection
+2021-12-22 14:38:31.515  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@78c190dc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.516  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: e93a4dea8e464f1:e93a4dea8e464f1:0:1 - Close
+2021-12-22 14:38:31.517  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@204a5a0a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.518  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 5feb45afbd6cb6f8:5feb45afbd6cb6f8:0:1 - Close
+2021-12-22 14:38:31.519  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@27d1242c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.520  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 4f74719e76da612f:4f74719e76da612f:0:1 - Close
+2021-12-22 14:38:31.521  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@4bde957d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.521  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: a157fb24696178c5:a157fb24696178c5:0:1 - Close
+2021-12-22 14:38:31.522  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@3f6dbbaa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.523  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 82854ab1e2ed5c34:82854ab1e2ed5c34:0:1 - Close
+2021-12-22 14:38:31.524  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@4d852c47 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.524  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 36f2201d30371e22:36f2201d30371e22:0:1 - Close
+2021-12-22 14:38:31.525  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@635b919f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.526  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: e6f3c27ea51e4cc7:e6f3c27ea51e4cc7:0:1 - Close
+2021-12-22 14:38:31.527  WARN 8646 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@5c1195f4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 14:38:31.527  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 8c3b4deaf24eab7d:8c3b4deaf24eab7d:0:1 - Close
+2021-12-22 14:38:31.767  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9bd413a2ffacdfbd:9bd413a2ffacdfbd:0:1 - AcquireConnection
+2021-12-22 14:38:32.147  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 66478faf87695386:66478faf87695386:0:1 - AcquireConnection
+2021-12-22 14:38:32.715  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 748c98fbc740e2f4:748c98fbc740e2f4:0:1 - AcquireConnection
+2021-12-22 14:38:33.564  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9841fda5643a354e:9841fda5643a354e:0:1 - AcquireConnection
+2021-12-22 14:38:34.832  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: e5f5bb76d6105ad3:e5f5bb76d6105ad3:0:1 - AcquireConnection
+2021-12-22 14:38:36.735  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: a0b38889ef1ba284:a0b38889ef1ba284:0:1 - AcquireConnection
+2021-12-22 14:38:39.586  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 21ff146e534c0c57:21ff146e534c0c57:0:1 - AcquireConnection
+2021-12-22 14:38:43.857  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: d840c689dd3e1d12:d840c689dd3e1d12:0:1 - AcquireConnection
+2021-12-22 14:38:50.264  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f1921de6e87e4853:f1921de6e87e4853:0:1 - AcquireConnection
+2021-12-22 14:38:59.865  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 3807a49569baf599:3807a49569baf599:0:1 - AcquireConnection
+2021-12-22 14:39:01.513 ERROR 8646 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30004ms.
+2021-12-22 14:39:01.513 ERROR 8646 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-12-22 14:39:01.516  INFO 8646 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 2be1b44dae63a4a9:2be1b44dae63a4a9:0:1 - listarTodas
+2021-12-22 14:39:01.517 ERROR 8646 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at io.opentracing.contrib.jdbc.TracingDriver.lambda$connect$0(TracingDriver.java:172) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.JdbcTracingUtils.call(JdbcTracingUtils.java:108) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.TracingDriver.connect(TracingDriver.java:171) ~[opentracing-jdbc-0.2.12.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-12-22 14:39:01.519  INFO 8646 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 2be1b44dae63a4a9:e7870a6e428e5176:2be1b44dae63a4a9:1 - error
+2021-12-22 14:39:09.873  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: d51c1d21d4c67649:d51c1d21d4c67649:0:1 - AcquireConnection
+2021-12-22 14:39:19.903  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 15178a28b4e3aedf:15178a28b4e3aedf:0:1 - AcquireConnection
+2021-12-22 14:39:19.921  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 5b6a85917f3cbd39:5b6a85917f3cbd39:0:1 - AcquireConnection
+2021-12-22 14:39:19.939  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: cab492330248df37:cab492330248df37:0:1 - AcquireConnection
+2021-12-22 14:39:19.956  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: afa926372b1e3cbf:afa926372b1e3cbf:0:1 - AcquireConnection
+2021-12-22 14:39:19.974  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: ce7850835134164d:ce7850835134164d:0:1 - AcquireConnection
+2021-12-22 14:39:19.992  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 52c5965e0af780:52c5965e0af780:0:1 - AcquireConnection
+2021-12-22 14:39:20.010  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: ca5bddfe473aea9:ca5bddfe473aea9:0:1 - AcquireConnection
+2021-12-22 14:39:20.029  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: eacbd124093b4347:eacbd124093b4347:0:1 - AcquireConnection
+2021-12-22 14:39:20.046  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 528829e132772f07:528829e132772f07:0:1 - AcquireConnection
+2021-12-22 14:39:20.064  INFO 8646 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 9a487633a30957a0:9a487633a30957a0:0:1 - AcquireConnection
+2021-12-22 14:50:17.119  INFO 8646 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-22 14:50:17.126  INFO 8646 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-22 14:50:17.129  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 21695323b450ad07:21695323b450ad07:0:1 - Close
+2021-12-22 14:50:17.131  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 1fba62b311d3f987:1fba62b311d3f987:0:1 - Close
+2021-12-22 14:50:17.133  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: baf3aef2719822ec:baf3aef2719822ec:0:1 - Close
+2021-12-22 14:50:17.135  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: c865f176b48ef5ac:c865f176b48ef5ac:0:1 - Close
+2021-12-22 14:50:17.136  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 47342058783384af:47342058783384af:0:1 - Close
+2021-12-22 14:50:17.138  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 5b8a54471f4fe899:5b8a54471f4fe899:0:1 - Close
+2021-12-22 14:50:17.140  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: f5f68073228813e5:f5f68073228813e5:0:1 - Close
+2021-12-22 14:50:17.142  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 179b6b26dcd3eb10:179b6b26dcd3eb10:0:1 - Close
+2021-12-22 14:50:17.143  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 88f395cb0a1b4614:88f395cb0a1b4614:0:1 - Close
+2021-12-22 14:50:17.145  INFO 8646 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 8155959e811a25d0:8155959e811a25d0:0:1 - Close
+2021-12-22 14:50:17.146  INFO 8646 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-22 15:10:46.037  INFO 9427 --- [restartedMain] c.g.g.GestaoVendasApplication            : Starting GestaoVendasApplication using Java 11.0.12 on raphaeleirasmbp.lan with PID 9427 (/Users/raphael.ferreira/Documents/Projeto_dev/JavaApi/gestao-vendas/target/classes started by raphael.ferreira in /Users/raphael.ferreira/Documents/Projeto_dev/JavaApi/gestao-vendas)
+2021-12-22 15:10:46.038  INFO 9427 --- [restartedMain] c.g.g.GestaoVendasApplication            : No active profile set, falling back to default profiles: default
+2021-12-22 15:10:46.112  INFO 9427 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-22 15:10:46.112  INFO 9427 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-22 15:10:46.882  INFO 9427 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-22 15:10:46.933  INFO 9427 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2021-12-22 15:10:47.880  INFO 9427 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-22 15:10:47.891  INFO 9427 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-22 15:10:47.892  INFO 9427 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-22 15:10:47.971  INFO 9427 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-22 15:10:47.971  INFO 9427 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1858 ms
+2021-12-22 15:10:48.304  INFO 9427 --- [restartedMain] o.c.s.w.s.ServerTracingAutoConfiguration : Creating FilterRegistrationBean bean with TracingFilter mapped to [], skip pattern is "/api-docs.*|/swagger.*|.*\.png|.*\.css|.*\.js|.*\.html|/favicon.ico|/hystrix.stream|/actuator/(health|health/.*|info|info/.*|prometheus|prometheus/.*|metrics|metrics/.*)"
+2021-12-22 15:10:48.422  INFO 9427 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 7.7.3 by Redgate
+2021-12-22 15:10:48.429  INFO 9427 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-22 15:10:48.816  INFO 9427 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-22 15:10:48.898  INFO 9427 --- [restartedMain] o.f.c.i.database.base.DatabaseType       : Database: jdbc:mysql://localhost/gvendas_db (MySQL 8.0)
+2021-12-22 15:10:49.002  INFO 9427 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.039s)
+2021-12-22 15:10:49.020  INFO 9427 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `gvendas_db`: 03
+2021-12-22 15:10:49.022  INFO 9427 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `gvendas_db` is up to date. No migration necessary.
+2021-12-22 15:10:50.095  INFO 9427 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-22 15:10:50.735  INFO 9427 --- [restartedMain] o.c.s.w.s.ServerTracingAutoConfiguration : Creating WebMvcConfigurer bean with class io.opentracing.contrib.spring.web.interceptor.TracingHandlerInterceptor
+2021-12-22 15:10:50.737  WARN 9427 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-22 15:10:50.826  INFO 9427 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2021-12-22 15:10:50.896  INFO 9427 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-12-22 15:10:51.010  INFO 9427 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-22 15:10:51.262  INFO 9427 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-22 15:10:51.263  INFO 9427 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-12-22 15:10:51.284  INFO 9427 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-12-22 15:10:51.310  INFO 9427 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-12-22 15:10:51.427  INFO 9427 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listarTodas_1
+2021-12-22 15:10:51.453  INFO 9427 --- [restartedMain] c.g.g.GestaoVendasApplication            : Started GestaoVendasApplication in 5.863 seconds (JVM running for 6.446)
+2021-12-22 15:10:53.731  INFO 9427 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-22 15:10:53.732  INFO 9427 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-22 15:10:53.733  INFO 9427 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-22 15:11:00.975  INFO 9427 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 89bc5d3cf70f50f7:89bc5d3cf70f50f7:0:1 - GET
+2021-12-22 15:11:00.995  INFO 9427 --- [http-nio-8080-exec-4] i.j.internal.reporters.LoggingReporter   : Span reported: 89bc5d3cf70f50f7:34e1f2e7cf6c5f0a:89bc5d3cf70f50f7:1 - error
+2021-12-22 15:11:01.008  INFO 9427 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: 2a1d6ce7fe9f09da:2a1d6ce7fe9f09da:0:1 - GET
+2021-12-22 15:11:01.011  INFO 9427 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 392057932d575142:392057932d575142:0:1 - GET
+2021-12-22 15:11:01.015  INFO 9427 --- [http-nio-8080-exec-7] i.j.internal.reporters.LoggingReporter   : Span reported: 392057932d575142:974917ec297278c2:392057932d575142:1 - error
+2021-12-22 15:11:01.095  INFO 9427 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 73bca232741d35f8:73bca232741d35f8:0:1 - GET
+2021-12-22 15:11:01.183  INFO 9427 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: 963cea0134168792:963cea0134168792:0:1 - GET
+2021-12-22 15:11:01.183  INFO 9427 --- [http-nio-8080-exec-9] i.j.internal.reporters.LoggingReporter   : Span reported: 6c549f2f23372836:6c549f2f23372836:0:1 - GET
+2021-12-22 15:11:01.183  INFO 9427 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: 4497c4a968495785:4497c4a968495785:0:1 - GET
+2021-12-22 15:11:01.184  INFO 9427 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 430cf2f32f6eab85:430cf2f32f6eab85:0:1 - GET
+2021-12-22 15:11:34.849  INFO 9427 --- [http-nio-8080-exec-10] i.j.internal.reporters.LoggingReporter   : Span reported: 6afb746149652cf9:6afb746149652cf9:0:1 - GET
+2021-12-22 15:11:37.507  INFO 9427 --- [http-nio-8080-exec-6] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 15:11:37.564  INFO 9427 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f9164346e671c652:8d08444235aac116:f9164346e671c652:1 - Query
+2021-12-22 15:11:37.589  INFO 9427 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f9164346e671c652:c75391733ef57a92:f9164346e671c652:1 - Commit
+2021-12-22 15:11:37.600  INFO 9427 --- [http-nio-8080-exec-6] i.j.internal.reporters.LoggingReporter   : Span reported: f9164346e671c652:f9164346e671c652:0:1 - listarTodas
+2021-12-22 15:11:37.643  INFO 9427 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: cff91111fa95addf:cff91111fa95addf:0:1 - GET
+2021-12-22 15:11:42.341  INFO 9427 --- [http-nio-8080-exec-2] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 15:11:42.350  INFO 9427 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 7023318b08016de5:fbf8035d30b5e121:7023318b08016de5:1 - Query
+2021-12-22 15:11:42.354  INFO 9427 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 7023318b08016de5:70b06145adceec85:7023318b08016de5:1 - Commit
+2021-12-22 15:11:42.359  INFO 9427 --- [http-nio-8080-exec-2] i.j.internal.reporters.LoggingReporter   : Span reported: 7023318b08016de5:7023318b08016de5:0:1 - listarTodas
+2021-12-22 15:11:54.552  INFO 9427 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 37bcf67ae5a47e89:c25ae7b11d423d35:37bcf67ae5a47e89:1 - Query
+2021-12-22 15:11:54.555  INFO 9427 --- [http-nio-8080-exec-3] c.g.g.servico.CategoriaServico           : Transacao=salvar
+2021-12-22 15:11:54.584  INFO 9427 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 37bcf67ae5a47e89:f96b972bd4ed86d3:37bcf67ae5a47e89:1 - Update
+2021-12-22 15:11:54.601  INFO 9427 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 37bcf67ae5a47e89:afde0a38b0c18575:37bcf67ae5a47e89:1 - Commit
+2021-12-22 15:11:54.605  INFO 9427 --- [http-nio-8080-exec-3] i.j.internal.reporters.LoggingReporter   : Span reported: 37bcf67ae5a47e89:37bcf67ae5a47e89:0:1 - salvar
+2021-12-22 15:13:26.948  INFO 9427 --- [http-nio-8080-exec-8] c.g.g.servico.CategoriaServico           : Transacao=listarTodas
+2021-12-22 15:13:26.954  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@5f77f1f7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.956  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 5da008e5b448708d:5da008e5b448708d:0:1 - Close
+2021-12-22 15:13:26.957  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@104a9b63 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.958  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 9ea37a0ab7a34417:9ea37a0ab7a34417:0:1 - Close
+2021-12-22 15:13:26.960  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@705228d4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.961  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 925abacf766cd66d:925abacf766cd66d:0:1 - Close
+2021-12-22 15:13:26.962  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 8955c2cab6ddbb1c:8955c2cab6ddbb1c:0:1 - AcquireConnection
+2021-12-22 15:13:26.962  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@73ea990c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.963  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 577686fc9400afd4:577686fc9400afd4:0:1 - Close
+2021-12-22 15:13:26.964  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@212f9407 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.965  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: d6fc0ba6790b50b5:d6fc0ba6790b50b5:0:1 - Close
+2021-12-22 15:13:26.967  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@65fa82c2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.968  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 9e21c4f318295812:9e21c4f318295812:0:1 - Close
+2021-12-22 15:13:26.969  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@48f1221 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.970  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 8311a0569219694b:8311a0569219694b:0:1 - Close
+2021-12-22 15:13:26.971  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@238ac945 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.972  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 9bead1de3aa6a15e:9bead1de3aa6a15e:0:1 - Close
+2021-12-22 15:13:26.974  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@7e58ee9f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.975  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: aac880cd4c71466b:aac880cd4c71466b:0:1 - Close
+2021-12-22 15:13:26.975  WARN 9427 --- [http-nio-8080-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection io.opentracing.contrib.jdbc.TracingConnection@4f059f04 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2021-12-22 15:13:26.976  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: d87978f0ed6dc10b:d87978f0ed6dc10b:0:1 - Close
+2021-12-22 15:13:27.218  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: b6c619abb2b80ce0:b6c619abb2b80ce0:0:1 - AcquireConnection
+2021-12-22 15:13:27.598  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 94a93aa0bd720103:94a93aa0bd720103:0:1 - AcquireConnection
+2021-12-22 15:13:28.166  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f3622467eea81beb:f3622467eea81beb:0:1 - AcquireConnection
+2021-12-22 15:13:29.015  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: aee71c98e5306ba9:aee71c98e5306ba9:0:1 - AcquireConnection
+2021-12-22 15:13:30.285  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 1d05b0c52bfa3a3f:1d05b0c52bfa3a3f:0:1 - AcquireConnection
+2021-12-22 15:13:32.185  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f2d43c7af28f94b2:f2d43c7af28f94b2:0:1 - AcquireConnection
+2021-12-22 15:13:35.034  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: e2552c93481f9b4:e2552c93481f9b4:0:1 - AcquireConnection
+2021-12-22 15:13:39.306  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 4946b63eb824f2a6:4946b63eb824f2a6:0:1 - AcquireConnection
+2021-12-22 15:13:45.711  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: c09bc14e4d86b5bd:c09bc14e4d86b5bd:0:1 - AcquireConnection
+2021-12-22 15:13:55.313  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 83d1130cb73a8cee:83d1130cb73a8cee:0:1 - AcquireConnection
+2021-12-22 15:13:56.952 ERROR 9427 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : HikariPool-1 - Connection is not available, request timed out after 30003ms.
+2021-12-22 15:13:56.952 ERROR 9427 --- [http-nio-8080-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-12-22 15:13:56.958  INFO 9427 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 8cb1d1eb5017882e:8cb1d1eb5017882e:0:1 - listarTodas
+2021-12-22 15:13:56.963 ERROR 9427 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to acquire JDBC Connection] with root cause
+
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[na:na]
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:608) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:948) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:818) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.27.jar:8.0.27]
+	at io.opentracing.contrib.jdbc.TracingDriver.lambda$connect$0(TracingDriver.java:172) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.JdbcTracingUtils.call(JdbcTracingUtils.java:108) ~[opentracing-jdbc-0.2.12.jar:na]
+	at io.opentracing.contrib.jdbc.TracingDriver.connect(TracingDriver.java:171) ~[opentracing-jdbc-0.2.12.jar:na]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2021-12-22 15:13:56.966  INFO 9427 --- [http-nio-8080-exec-8] i.j.internal.reporters.LoggingReporter   : Span reported: 8cb1d1eb5017882e:f6ec6a9946f391ca:8cb1d1eb5017882e:1 - error
+2021-12-22 15:14:05.317  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f621b523076dddfd:f621b523076dddfd:0:1 - AcquireConnection
+2021-12-22 15:14:15.318  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: ee2e014a3bdf32d1:ee2e014a3bdf32d1:0:1 - AcquireConnection
+2021-12-22 15:14:25.322  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 2dda00592f2c9f2f:2dda00592f2c9f2f:0:1 - AcquireConnection
+2021-12-22 15:14:35.329  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 63ff68edc4f840d8:63ff68edc4f840d8:0:1 - AcquireConnection
+2021-12-22 15:14:45.334  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: faa050c5ec1d7522:faa050c5ec1d7522:0:1 - AcquireConnection
+2021-12-22 15:14:55.545  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: ced36bb3842892b5:ced36bb3842892b5:0:1 - AcquireConnection
+2021-12-22 15:15:05.579  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: c92449cf915eb2b6:c92449cf915eb2b6:0:1 - AcquireConnection
+2021-12-22 15:15:05.608  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: d7f23852ee9fcd4a:d7f23852ee9fcd4a:0:1 - AcquireConnection
+2021-12-22 15:15:05.638  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: a1c0e069d34fb2c9:a1c0e069d34fb2c9:0:1 - AcquireConnection
+2021-12-22 15:15:05.668  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f8771de9d966163a:f8771de9d966163a:0:1 - AcquireConnection
+2021-12-22 15:15:05.695  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: eb4192bcf80107a9:eb4192bcf80107a9:0:1 - AcquireConnection
+2021-12-22 15:15:05.726  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 7f606db53e155189:7f606db53e155189:0:1 - AcquireConnection
+2021-12-22 15:15:05.758  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 39f8be359911a12:39f8be359911a12:0:1 - AcquireConnection
+2021-12-22 15:15:05.788  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 54ecdc29fe843b5b:54ecdc29fe843b5b:0:1 - AcquireConnection
+2021-12-22 15:15:05.819  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 267484a1d751c8ac:267484a1d751c8ac:0:1 - AcquireConnection
+2021-12-22 15:15:05.846  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 118e19361d0041e3:118e19361d0041e3:0:1 - AcquireConnection
+2021-12-22 15:15:15.659  WARN 9427 --- [http-nio-8080-exec-5] c.g.g.e.GestaoVendasTratamentoExcecao    : Erro foi=BAD_REQUEST
+2021-12-22 15:15:15.659  WARN 9427 --- [http-nio-8080-exec-5] c.g.g.e.GestaoVendasTratamentoExcecao    : Erro foi=VALIDATION_LENGTH
+2021-12-22 15:15:15.662  WARN 9427 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gvendas.gestaovendas.entidades.Categoria> com.gvendas.gestaovendas.controlador.CategoriaControlador.salvar(com.gvendas.gestaovendas.entidades.Categoria): [Field error in object 'categoria' on field 'nome': rejected value [oi]; codes [Length.categoria.nome,Length.nome,Length.java.lang.String,Length]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [categoria.nome,nome]; arguments []; default message [nome],50,3]; default message [Nome]] ]
+2021-12-22 15:15:15.662  INFO 9427 --- [http-nio-8080-exec-5] i.j.internal.reporters.LoggingReporter   : Span reported: f45d44e72bc0106d:f45d44e72bc0106d:0:1 - salvar
+2021-12-22 15:44:22.969  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: a1dac41da21261f8:a1dac41da21261f8:0:1 - Close
+2021-12-22 15:44:22.992  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f9569521e4466ef6:f9569521e4466ef6:0:1 - AcquireConnection
+2021-12-22 15:44:23.913  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: cb3d09448cbb7b7e:cb3d09448cbb7b7e:0:1 - Close
+2021-12-22 15:44:23.933  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 2b9870417900c607:2b9870417900c607:0:1 - AcquireConnection
+2021-12-22 15:44:38.334  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 28b8eeea78e978d7:28b8eeea78e978d7:0:1 - Close
+2021-12-22 15:44:38.350  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: f0ea533d3c5b04f6:f0ea533d3c5b04f6:0:1 - AcquireConnection
+2021-12-22 15:44:40.682  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: d0859051a5f34f60:d0859051a5f34f60:0:1 - Close
+2021-12-22 15:44:40.697  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 7624a3eeb2d59e50:7624a3eeb2d59e50:0:1 - AcquireConnection
+2021-12-22 15:44:41.249  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: f3f88c25a7cb1e83:f3f88c25a7cb1e83:0:1 - Close
+2021-12-22 15:44:41.266  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: b6dffcb1f2040ee:b6dffcb1f2040ee:0:1 - AcquireConnection
+2021-12-22 15:44:41.325  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: cfe75b50bb8d8f01:cfe75b50bb8d8f01:0:1 - Close
+2021-12-22 15:44:41.340  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 3404f5ca541e3f36:3404f5ca541e3f36:0:1 - AcquireConnection
+2021-12-22 15:44:59.514  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 8e08d1e4da6988ac:8e08d1e4da6988ac:0:1 - Close
+2021-12-22 15:44:59.531  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 88de381fb51675f:88de381fb51675f:0:1 - AcquireConnection
+2021-12-22 15:45:02.824  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: b5cecf4ff58ddb7a:b5cecf4ff58ddb7a:0:1 - Close
+2021-12-22 15:45:02.841  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 3a1bf63270813dc2:3a1bf63270813dc2:0:1 - AcquireConnection
+2021-12-22 15:45:03.761  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 105c4260daf2ce6f:105c4260daf2ce6f:0:1 - Close
+2021-12-22 15:45:03.777  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 65b6f2edc191d7e6:65b6f2edc191d7e6:0:1 - AcquireConnection
+2021-12-22 15:45:05.598  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: d188eef5221aa07:d188eef5221aa07:0:1 - Close
+2021-12-22 15:45:05.614  INFO 9427 --- [HikariPool-1 connection adder] i.j.internal.reporters.LoggingReporter   : Span reported: 4c5fe755ed8889c7:4c5fe755ed8889c7:0:1 - AcquireConnection
+2021-12-22 15:53:53.337  INFO 9427 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-22 15:53:53.344  INFO 9427 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-22 15:53:53.345  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 77d3fed51a21bbd:77d3fed51a21bbd:0:1 - Close
+2021-12-22 15:53:53.346  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 80edfc38e5151a8c:80edfc38e5151a8c:0:1 - Close
+2021-12-22 15:53:53.346  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 6dad4d6456c16490:6dad4d6456c16490:0:1 - Close
+2021-12-22 15:53:53.347  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: e243d902d2c55c54:e243d902d2c55c54:0:1 - Close
+2021-12-22 15:53:53.347  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: b8ee555a12d380c7:b8ee555a12d380c7:0:1 - Close
+2021-12-22 15:53:53.347  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 2201226c1132fee0:2201226c1132fee0:0:1 - Close
+2021-12-22 15:53:53.348  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 9a85245b28b5a3fa:9a85245b28b5a3fa:0:1 - Close
+2021-12-22 15:53:53.348  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 9784903b7026501f:9784903b7026501f:0:1 - Close
+2021-12-22 15:53:53.348  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: 35a64642e3955855:35a64642e3955855:0:1 - Close
+2021-12-22 15:53:53.349  INFO 9427 --- [HikariPool-1 connection closer] i.j.internal.reporters.LoggingReporter   : Span reported: ecb5b38f61142edc:ecb5b38f61142edc:0:1 - Close
+2021-12-22 15:53:53.349  INFO 9427 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
